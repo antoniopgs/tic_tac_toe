@@ -8,6 +8,7 @@ table {
     width: 100vw;
     margin: 0;
     padding: 0;
+    border-spacing: 0;
 }
 
 tr {
