@@ -1,67 +1,100 @@
-html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-}
-
 body {
+    height: 100vh;
+    width: 100vw;
     margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    font-family: monospace;
-}
-
-table {
-    border-spacing: 0;
-    height: 75vh;
-    width: 75vh;
-}
-
-tr {
-    margin: 0;
-    padding: 0;
-}
-
-td {
-    text-align: center;
-    font-size: large;
-    border-style: solid;
-    border-color: black;
-    border-width: 5% 10% 5% 10%;
-    margin: 0;
-    padding: 0;
-}
-
-.interface {
-    display: flex;
-    text-align: center;
-    height: 10%;
-}
-
-.player_message {
-    width: 80%;
-}
-
-.button {
-    width: 20%;
-    background-color: green;
-    color: white;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-.main {
-    height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
+    background-color: whitesmoke;
+    font-family: Helvetica;
+    justify-content: space-around;
 }
 
-.table {
-    height: 90%;
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    width: 100vw;
+}
+
+section {
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#board {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 60vh;
+}
+
+.left, .center, .right {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#top_row, #middle_row, #bottom_row {
+    display: flex;
+    height: 20vh;
+    width: 60vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+    line-height: 10vh;
+}
+
+button {
+    font-size: 1em;
+    margin: 1%;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: medium solid black;
+}
+
+div#top_row {
+    border-top: 0.5em solid black;
+    border-left: 0.5em solid black;
+    border-right: 0.5em solid black;
+    border-bottom: 0.25em solid black;
+}
+
+div#middle_row {
+    border-top: 0.25em solid black;
+    border-left: 0.5em solid black;
+    border-right: 0.5em solid black;
+    border-bottom: 0.25em solid black;
+}
+
+div#bottom_row {
+    border-top: 0.25em solid black;
+    border-left: 0.5em solid black;
+    border-right: 0.5em solid black;
+    border-bottom: 0.5em solid black;
+}
+
+.left {
+    border-right: 0.25em solid black;
+}
+
+.center {
+    border-left: 0.25em solid black;
+    border-right: 0.25em solid black;
+}
+
+.right {
+    border-left: 0.25em solid black;
+}
+
+.xo {
+    font-size: 5em;
 }

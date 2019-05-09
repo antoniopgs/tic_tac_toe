@@ -1,34 +1,62 @@
 <!DOCTYPE html>
 <html>
+
     <head>
+        <link href="style.css" type="text/css" rel="stylesheet">
         <title>Tic Tac Toe</title>
-        <link href="./style.css" type="text/css" rel="stylesheet">
     </head>
+
     <body>
-        <div class="main">
-            <div class="interface">
-                <h1 class="player_message">Player 1, it's your turn.</h1>
-                <h1 class ="button">Restart</h2>
+
+        <nav>
+            <h1>Player 1, it's your turn.</h1>
+            <button>Restart</button>
+        </nav> 
+
+        <section>
+
+            <div id="board">
+
+                <div id="top_row">
+                    <div class="top left">
+                        <p class="xo">-</p>
+                    </div>
+                    <div class="top center">
+                        <p class="xo">-</p>
+                    </div>
+                    <div class="top right">
+                        <p class="xo">-</p>
+                    </div>
+                </div>
+                
+                <div id="middle_row">
+                    <div class="middle left">
+                        <p class="xo">-</p>
+                    </div>
+                    <div class="middle center">
+                        <p class="xo">-</p>
+                    </div>
+                    <div class="middle right">
+                        <p class="xo">-</p>
+                    </div>
+                </div>
+                
+                <div id="bottom_row">
+                    <div class="bottom left">
+                        <p class="xo">-</p>
+                    </div>
+                    <div class="bottom center">
+                        <p class="xo">-</p>
+                    </div>
+                    <div class="bottom right">
+                        <p class="xo">-</p>
+                    </div>
+                </div>
+
             </div>
-            <div class="table">
-                <table>
-                    <tr>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+
+        </section>
+
     </body>
+
 </html>
